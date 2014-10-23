@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Emailaddress:</b>
+  <%= @voice_logger.emailaddress %>
+</p>
+
+<p>
+  <b>Detectedstring:</b>
+  <%= @voice_logger.detectedstring %>
+</p>
+
+
+<%= link_to 'Edit', edit_voice_logger_path(@voice_logger) %> |
+<%= link_to 'Back', voice_loggers_path %>

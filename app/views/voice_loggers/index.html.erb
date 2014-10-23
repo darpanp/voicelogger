@@ -1,0 +1,25 @@
+<h1>Listing voice_loggers</h1>
+
+<table>
+  <tr>
+    <th>Emailaddress</th>
+    <th>Detectedstring</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @voice_loggers.each do |voice_logger| %>
+  <tr>
+    <td><%= voice_logger.emailaddress %></td>
+    <td><%= voice_logger.detectedstring %></td>
+    <td><%= link_to 'Show', voice_logger %></td>
+    <td><%= link_to 'Edit', edit_voice_logger_path(voice_logger) %></td>
+    <td><%= link_to 'Destroy', voice_logger, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Voice logger', new_voice_logger_path %>
