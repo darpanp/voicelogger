@@ -13,7 +13,7 @@ Voicelogger::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  #resources :voice_loggers
 
   # Sample resource route with options:
   #   resources :products do
@@ -51,7 +51,8 @@ Voicelogger::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => 'voice_loggers#index'
+  #root :to => 'voice_loggers#index'
+  
 
   # See how all your routes lay out with "rake routes"
 
